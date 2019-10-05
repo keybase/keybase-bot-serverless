@@ -14,7 +14,7 @@ Serverless.
 
 ## Configuration
 
-In order to start the template you nee to set the following
+In order to start the template you need to set the following
 environment variables in `serverless.yml`:
 
 - `KB_USERNAME`, which is the username of your bot,
