@@ -4,9 +4,9 @@ clean:
 
 .PHONY: fetch-binary
 fetch-binary:
-	docker pull keybase/client:latest
+	docker pull keybaseio/client:latest
 	docker rm -f keybase-bot-serverless || true
-	docker create --name keybase-bot-serverless keybase/client:latest
+	docker create --name keybase-bot-serverless keybaseio/client:latest
 	mkdir -p ./bin
 	docker cp keybase-bot-serverless:/usr/bin/keybase ./bin/keybase
 	docker rm -f keybase-bot-serverless || true
